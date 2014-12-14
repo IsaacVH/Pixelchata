@@ -1,0 +1,1 @@
+python C:\wwwroot\_src\scripts\Terraria\readcmd.py
