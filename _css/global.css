@@ -1,11 +1,11 @@
 @font-face {
 	font-family: Roboto;
-    src: url("../_assets/fonts/roboto/Roboto-Black.ttf");
+    src: url("/_assets/fonts/roboto/Roboto-Black.ttf");
 }
 
 @font-face {
 	font-family: STOP;
-	src: url("../_assets/fonts/stop-alan_carr/STOP.ttf");
+	src: url("/_assets/fonts/stop-alan_carr/STOP.ttf");
 }
 
 html { font-family: Roboto, Helvetica, Arial, sans-serif; height: 100%; }
