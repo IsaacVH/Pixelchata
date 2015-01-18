@@ -1,1 +1,1 @@
-python C:\wwwroot\_src\scripts\Terraria\readcmd.py
+python C:\wwwroot\Pixelchata\_src\scripts\terraria\readcmd.py

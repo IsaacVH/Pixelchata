@@ -1,40 +1,60 @@
 .content-grid {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 	width: 100%;
-	height: 648px;
+	height: 800px;
 	position: relative;
 }
 
 .content-grid .grid-item {
-	margin: 5px;
-	padding: 5px;
-	height: 300px;
-	min-width: 300px;
-	width: calc(50% - 22px);
+	height: 50%;
+	width: 50%;
 
-	overflow: hidden;
+	float: left;
+	position: relative;
+}
+
+.content-grid .grid-item .inner-page-content {
+	margin: 15px;
+	width: calc(100% - 30px);
+	height: calc(100% - 30px);
+}
+
+.content-grid .grid-item h3 {
+	margin: 0;
+	margin-left: 5px;
+}
+
+.content-grid .grid-item .divider-line {
+	height: 2px;
+	width: 100%;
+	margin: 5px 0;
+	background-color: #8d8d8d;
+}
+
+.content-grid .grid-item .content-display {
+	font-family: courier; 
+	font-weight: bold;
+	height: calc(100% - 41px); 
+	margin: 0 5px;
 	overflow-y: auto;
-	border: 1px solid #ddd;
-	position: absolute;
 }
 
 .content-grid .grid-item.news {
-	top: 0;
-	left: 0;
+
 }
 
 .content-grid .grid-item.uploads {
-	top: 0;
-	left: 50%;
+
 }
 
 .content-grid .grid-item.server {
-	top: 322px;
-	left: 0;
+
 }
 
 .content-grid .grid-item.mail {
-	top: 322px;
-	left: 50%;
+
 }
 
 @media only screen and (max-width: 719px) {

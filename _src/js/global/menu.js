@@ -52,7 +52,9 @@ function selectMenuItem(mitem) {
 	return false;
 }
 
-function login() {
+function login(e) {
+	e.preventDefault();
+
 	var useremail = $("#user-email").val();
 	var userpassw = $("#user-passw").val();
 
@@ -67,9 +69,11 @@ function login() {
 			if(data == "success"){
 				$('.outer-nav').removeClass("before-login");
 				$('.login-form').css("display", "none");
+				return false;
 			}
 		}
 	});
+	return false;
 }
 
 

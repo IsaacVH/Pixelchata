@@ -1,4 +1,4 @@
-<nav class="outer-nav before-login navy-theme">
+<nav class="outer-nav navy-theme">
 	<h1 class="title"><?php echo strtoupper($name); ?></h1>
 	<ul>
 		<?php foreach($tabs as $tab){

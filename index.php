@@ -1,14 +1,11 @@
-<?php 
-	$page = "";
-
-	if(isset($_GET["page"])) {
-		$page = $_GET["page"];
-	} 
-
-	$site = "Pixelchata";
-	
-	$xml = simplexml_load_file($_SERVER['DOCUMENT_ROOT']."/pages/".strtolower($site)."/_config.xml")
+<?php
+	$xml = simplexml_load_file($_SERVER['DOCUMENT_ROOT']."/pages/_config.xml")
 			or die("Error: Cannot load config file.");
+
+	$page = "home";
+	if(isset($_GET["page"])){
+		$page = $_GET["page"];
+	}
 
 	$name = $xml->name;
 	$logo = $xml->logo;
@@ -40,19 +37,19 @@
 			foreach($tabs as $tab){ echo ".outer-nav .nav-icon.".$tab['id'].".selected { border-bottom-color: ".$tab['color']."; }\n"; } 
 			echo "</style>"; 
 		?>
-		<?php foreach($tabs as $tab) { echo "<link rel='stylesheet' href='/pages/$site/css/".$tab['style']."'>"; } ?>
+		<?php foreach($tabs as $tab) { echo "<link rel='stylesheet' href='/pages/css/".$tab['style']."'>"; } ?>
 	</head>
 	<body>
 		<?php require($sdocroot.'/_src/php/global-includes/header.php'); ?>
 		<?php require($sdocroot.'/_src/php/global-includes/background.php'); ?>
-		<?php require($sdocroot.'/_src/php/login-form.php'); ?>
+		<?php //require($sdocroot.'/_src/php/login-form.php'); ?>
 		<div class="container">
 			<div class="wrapper">
 				<?php foreach($tabs as $tab) { ?>
 				<div class="page hide <?php echo $tab['id'];?>">
 					<div class="header" style="background-color: <?php echo $tab['color'] ?>;"><h2><?php echo ucwords($tab['id']); ?></h2></div>
 					<div class="content">
-						<?php include($sdocroot.'/pages/'.$site.'/'.$tab['file']); ?>
+						<?php include($sdocroot.'/pages/'.$tab['file']); ?>
 					</div>
 				</div>
 				<?php } ?>
