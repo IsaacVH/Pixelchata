@@ -138,7 +138,7 @@ body { height: 100%; }
 
 .page > .header { text-shadow: 1px 1px 4px black; color: white; padding: 10px; }
 .page > .header h2 { margin: 0 0 0 20px; }
-.page > .content { padding: 10px; border: 1px solid #D9E0E2; }
+.page > .content { padding: 10px; border: 1px solid #D9E0E2; min-height: 500px; }
 
 @media only screen and (max-width: 1099px), (max-height: 699px) {
 	.outer-nav { height: 50px; }
