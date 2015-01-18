@@ -31,6 +31,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title><?php echo ucfirst($name); ?></title>
 		<link rel='shortcut icon' href="/pixelchata.png">
+		<link href='http://fonts.googleapis.com/css?family=Quantico:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<?php require($sdocroot."/_src/php/global-includes/styles.php"); ?>
 		<?php 
 			echo "<style>"; 

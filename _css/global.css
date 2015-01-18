@@ -6,7 +6,6 @@
 @font-face {
 	font-family: STOP;
 	src: url("/_assets/fonts/stop-alan_carr/STOP.ttf");
-	src: url('/_assets/fonts/stop-alan_carr/STOP.ttf?v=4.0.3') format('truetype');
 }
 
 html { font-family: Roboto, Helvetica, Arial, sans-serif; height: 100%; }
@@ -22,6 +21,7 @@ body { height: 100%; }
 /************** HEADER STYLES ********************/
 .outer-nav .title {
 	font-family: STOP, Roboto, Helvetica, Arial, sans-serif;
+	line-height: 40px;
 	z-index: 1;
 	position: absolute;
 	top: 0;
