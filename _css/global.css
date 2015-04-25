@@ -19,14 +19,19 @@ body { height: 100%; }
 
 
 /************** HEADER STYLES ********************/
+.outer-nav a { color: inherit; }      /* unvisited link */
+.outer-nav a:visited { color: inherit; }  /* visited link */
+.outer-nav a:hover { color: inherit; }  /* mouse over link */
+.outer-nav a:active { color: inherit; }  /* selected link */
+
 .outer-nav .title {
-	font-family: STOP, Roboto, Helvetica, Arial, sans-serif;
-	line-height: 40px;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	line-height: 70px;
 	z-index: 1;
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 17px 0 0 25px;
+	margin: 0 0 0 25px;
 	font-weight: lighter;
 	font-size: 50px;
 }
@@ -120,7 +125,7 @@ body { height: 100%; }
 	background-color: #fff5e6;
 	overflow: hidden;
 
-	box-shadow: 2px 2px 6px #777;
+	box-shadow: 0 0 6px -3px #777;
 	-ms-transition: all 0.2s ease;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;

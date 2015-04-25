@@ -26,7 +26,7 @@ $(function() {
 	}
 
 	// startServer();
-	checkLog(window.location.origin+"/_src/_logs/terraria.log");
+	//checkLog(window.location.origin+"/_src/_logs/terraria.log");
 });
 
 var timeout1 = null;

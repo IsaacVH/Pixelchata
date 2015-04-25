@@ -1,5 +1,5 @@
 <nav class="outer-nav navy-theme">
-	<h1 class="title"><?php echo strtoupper($name); ?></h1>
+	<a href="/"><h1 class="title"><?php echo strtoupper($name); ?></h1></a>
 	<ul>
 		<?php foreach($tabs as $tab){
 			$selected = $page == $tab['id'] ? " selected" : "";
